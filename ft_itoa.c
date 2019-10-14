@@ -6,12 +6,11 @@
 /*   By: jkelly- <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/23 12:11:38 by jkelly-           #+#    #+#             */
-/*   Updated: 2019/10/11 15:08:06 by jkelly-          ###   ########.fr       */
+/*   Updated: 2019/10/14 16:03:12 by jkelly-          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
-#include <stdio.h>
 #include "libft.h"
 
 static int		len(long n)

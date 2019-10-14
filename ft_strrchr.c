@@ -6,11 +6,10 @@
 /*   By: jkelly- <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/19 08:42:14 by jkelly-           #+#    #+#             */
-/*   Updated: 2019/10/11 15:49:59 by jkelly-          ###   ########.fr       */
+/*   Updated: 2019/10/14 16:10:37 by jkelly-          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
 #include "libft.h"
 
 char	*ft_strrchr(const char *s, int c)

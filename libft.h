@@ -6,7 +6,7 @@
 /*   By: jkelly- <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/16 17:24:45 by jkelly-           #+#    #+#             */
-/*   Updated: 2019/10/11 16:24:56 by jkelly-          ###   ########.fr       */
+/*   Updated: 2019/10/14 15:53:50 by jkelly-          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,8 +33,8 @@ int					ft_tolower(int c);
 int					ft_cntlt(const char *str, char c);
 int					ft_toupper(int c);
 int					ft_isprint(int c);
-int					ft_isslash(char *str);
-int					ft_isspace(char *str);
+int					ft_isslash(char x);
+int					ft_isspace(char x);
 int					ft_strnequ(char const *s1, char const *s2, size_t n);
 int					ft_countwords(char const *s, char c);
 int					ft_memcmp(const void *s1, const void *s2, size_t n);

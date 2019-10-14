@@ -6,13 +6,12 @@
 /*   By: jkelly- <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/22 14:20:28 by jkelly-           #+#    #+#             */
-/*   Updated: 2019/10/11 16:10:56 by jkelly-          ###   ########.fr       */
+/*   Updated: 2019/10/14 16:10:11 by jkelly-          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 #include "libft.h"
-#include <stdio.h>
 
 char	*ft_strtrim(char const *s)
 {

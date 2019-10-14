@@ -6,18 +6,16 @@
 /*   By: jkelly- <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/11 16:16:42 by jkelly-           #+#    #+#             */
-/*   Updated: 2019/10/11 16:22:58 by jkelly-          ###   ########.fr       */
+/*   Updated: 2019/10/14 15:54:35 by jkelly-          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_isslash(char *str)
+int		ft_isslash(char x)
 {
-	while (str[i])
-	{
-		if (str[i] == 47 || str[i] == 92)
-			return (1);
-	}
-	return (0);
+	if (x == 47 || x == 92)
+		return (1);
+	else
+		return (0);
 }
