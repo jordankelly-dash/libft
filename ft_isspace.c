@@ -6,19 +6,16 @@
 /*   By: jkelly- <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/11 16:14:02 by jkelly-           #+#    #+#             */
-/*   Updated: 2019/10/11 16:22:08 by jkelly-          ###   ########.fr       */
+/*   Updated: 2019/10/14 13:06:14 by jkelly-          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_isspace(char *str)
+int		ft_isspace(char x)
 {
-	while (str[i])
-	{
-		if (str[i] == 32)
-			return (1);
-		i++;
-	}
-	return (0);
+	if (x == 32)
+		return (1);
+	else
+		return (0);
 }
