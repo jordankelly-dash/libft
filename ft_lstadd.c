@@ -6,7 +6,7 @@
 /*   By: jkelly- <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/25 09:39:51 by jkelly-           #+#    #+#             */
-/*   Updated: 2019/10/09 14:15:45 by jkelly-          ###   ########.fr       */
+/*   Updated: 2019/10/11 15:43:58 by jkelly-          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,6 @@
 
 void	ft_lstadd(t_list **alst, t_list *nw)
 {
-		nw->next = *alst;
-		*alst = nw;
+	nw->next = *alst;
+	*alst = nw;
 }

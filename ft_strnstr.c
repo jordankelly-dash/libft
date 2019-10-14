@@ -6,7 +6,7 @@
 /*   By: jkelly- <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/18 20:52:49 by jkelly-           #+#    #+#             */
-/*   Updated: 2019/10/10 17:51:10 by jkelly-          ###   ########.fr       */
+/*   Updated: 2019/10/11 15:36:53 by jkelly-          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ const char		*ft_strnstr(const char *hs, const char *n, size_t len)
 			}
 			i = savei;
 		}
-		i++;	
+		i++;
 	}
 	return (0);
 }

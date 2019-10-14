@@ -6,7 +6,7 @@
 /*   By: jkelly- <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/16 17:24:45 by jkelly-           #+#    #+#             */
-/*   Updated: 2019/10/09 15:16:19 by jkelly-          ###   ########.fr       */
+/*   Updated: 2019/10/11 16:24:56 by jkelly-          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,12 +26,15 @@ int					ft_strcmp(char *s1, char *s2);
 int					ft_atoi(const char *str);
 int					ft_isalpha(int c);
 int					ft_isdigit(int c);
-int					ft_strlen(char *str);
+size_t				ft_strlen(char *str);
 int					ft_strequ(char const *s1, char const *s2);
 int					ft_strncmp(const char *s1, const char *s2, size_t n);
 int					ft_tolower(int c);
+int					ft_cntlt(const char *str, char c);
 int					ft_toupper(int c);
 int					ft_isprint(int c);
+int					ft_isslash(char *str);
+int					ft_isspace(char *str);
 int					ft_strnequ(char const *s1, char const *s2, size_t n);
 int					ft_countwords(char const *s, char c);
 int					ft_memcmp(const void *s1, const void *s2, size_t n);
@@ -80,5 +83,5 @@ void				ft_lstiter(t_list *lst, void (*f)(t_list *elem));
 void				ft_lstdelone(t_list **alst, void (*del)(void *, size_t));
 void				ft_lstdel(t_list **alst, void (*del)(void *, size_t));
 void				ft_lstadd(t_list **alst, t_list *nw);
-void 				*ft_dup(void const *content, size_t content_size);
+void				*ft_dup(void const *content, size_t content_size);
 #endif

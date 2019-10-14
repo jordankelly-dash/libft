@@ -6,7 +6,7 @@
 /*   By: jkelly- <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/22 14:12:02 by jkelly-           #+#    #+#             */
-/*   Updated: 2019/10/03 12:20:48 by jkelly-          ###   ########.fr       */
+/*   Updated: 2019/10/11 16:07:32 by jkelly-          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,8 @@ char	*ft_strjoin(char const *s1, char const *s2)
 
 	i = 0;
 	j = 0;
+	if (!s2 || !s1)
+		return (NULL);
 	x = ft_strlen((char*)s1) + ft_strlen((char*)s2);
 	if (!(bigstring = (char*)malloc(sizeof(char) * x + 1)))
 		return (NULL);

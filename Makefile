@@ -6,7 +6,7 @@
 #    By: jkelly- <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/10/08 19:29:45 by jkelly-           #+#    #+#              #
-#    Updated: 2019/10/09 12:33:42 by jkelly-          ###   ########.fr        #
+#    Updated: 2019/10/11 13:54:24 by jkelly-          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -25,7 +25,7 @@ SRCS = ft_atoi.c ft_bzero.c ft_countwords.c ft_isalnum.c ft_isalpha.c \
 			ft_strmap.c ft_strmapi.c ft_strncat.c ft_strncmp.c \
 			ft_strncpy.c ft_strnequ.c ft_strnew.c ft_strnstr.c \
 			ft_strrchr.c ft_strsplit.c ft_strstr.c ft_strsub.c \
-			ft_strtrim.c ft_toupper.c ft_tolower.c \
+			ft_strtrim.c ft_toupper.c ft_tolower.c ft_cntlt.c \
 
 OFILES = $(subst .c,.o,$(SRCS))
 

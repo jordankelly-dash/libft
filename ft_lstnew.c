@@ -6,7 +6,7 @@
 /*   By: jkelly- <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/23 15:40:55 by jkelly-           #+#    #+#             */
-/*   Updated: 2019/10/09 16:21:39 by jkelly-          ###   ########.fr       */
+/*   Updated: 2019/10/11 15:40:36 by jkelly-          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,17 +19,17 @@ t_list	*ft_lstnew(void const *content, size_t content_size)
 
 	list = (t_list *)malloc(sizeof(*list));
 	if (!list)
-			return (NULL);
+		return (NULL);
 	if (!content)
-	{	
+	{
 		list->content = NULL;
 		list->content_size = 0;
 	}
-	else 
-	{	
+	else
+	{
 		list->content = malloc(content_size);
 		if (!list->content)
-		{	
+		{
 			free(list);
 			return (NULL);
 		}

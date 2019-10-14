@@ -1,27 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstmap.c                                        :+:      :+:    :+:   */
+/*   ft_cntlt.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jkelly- <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/09/25 10:02:15 by jkelly-           #+#    #+#             */
-/*   Updated: 2019/10/11 15:44:50 by jkelly-          ###   ########.fr       */
+/*   Created: 2019/10/11 13:39:48 by jkelly-           #+#    #+#             */
+/*   Updated: 2019/10/11 14:58:06 by jkelly-          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
-t_list	*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem))
+int		ft_cntlt(const char *str, char c)
 {
-	t_list *new;
+	int i;
 
-	if (lst)
+	i = 0;
+	while (*str == c)
+		str++;
+	while (*str != c && *str)
 	{
-		new = f(lst);
-		new->next = ft_lstmap(lst->next, f);
-		return (new);
+		str++;
+		i++;
 	}
-	return (NULL);
+	return (i);
 }
