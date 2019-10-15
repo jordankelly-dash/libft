@@ -6,7 +6,7 @@
 /*   By: jkelly- <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/16 13:23:03 by jkelly-           #+#    #+#             */
-/*   Updated: 2019/10/14 19:39:12 by jkelly-          ###   ########.fr       */
+/*   Updated: 2019/10/15 11:31:49 by jkelly-          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,8 +31,7 @@ int		ft_atoi(const char *str)
 	}
 	while (*str >= '0' && *str <= '9')
 	{
-		val = (val * 10) + (*str - '0');
-		str++;
+		val = (val * 10) + (*str++ - '0');
 		overflow++;
 		if (overflow >= 19)
 			return ((sign == -1) ? 0 : (-1));
