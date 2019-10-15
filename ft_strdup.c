@@ -6,7 +6,7 @@
 /*   By: jkelly- <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/17 10:39:05 by jkelly-           #+#    #+#             */
-/*   Updated: 2019/10/14 12:46:42 by jkelly-          ###   ########.fr       */
+/*   Updated: 2019/10/14 18:08:47 by jkelly-          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ char	*ft_strdup(char *str)
 	{
 		i++;
 	}
-	dup = (char*)malloc(sizeof(dup) * i + 1);
+	dup = (char*)malloc(sizeof(char) * i + 1);
 	if (dup == NULL)
 		return (NULL);
 	while (str[j])
