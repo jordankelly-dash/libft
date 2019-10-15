@@ -6,14 +6,14 @@
 /*   By: jkelly- <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/16 13:23:03 by jkelly-           #+#    #+#             */
-/*   Updated: 2019/10/14 18:23:06 by jkelly-          ###   ########.fr       */
+/*   Updated: 2019/10/14 19:09:22 by jkelly-          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int		ft_atoi(const char *str)
 {
-	int sign;
-	int val;
+	long long int sign;
+	long long int val;
 
 	sign = 1;
 	val = 0;
@@ -29,7 +29,7 @@ int		ft_atoi(const char *str)
 	}
 	while (*str >= '0' && *str <= '9')
 	{
-		val = (val * 10) + *str - '0';
+		val = (val * 10) + (long long int)(*str - '0');
 		str++;
 	}
 	return (val * sign);
