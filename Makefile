@@ -28,16 +28,14 @@ SRCS = ft_atoi.c ft_bzero.c ft_countwords.c ft_isalnum.c ft_isalpha.c \
 			ft_strtrim.c ft_toupper.c ft_tolower.c ft_cntlt.c \
 			ft_isspace.c ft_isslash.c ft_dup.c \
 
-OFILES = $(subst .c,.o,$(SRCS))
+OFILES = $(SRCS:.c=.o)
 
 CFLAGS = -Wall -Wextra -Werror
 
 all: $(NAME)
 
-$(NAME):
-		gcc $(CFLAGS) -c $(SRCS)
-		ar rc $(NAME) $(OFILES)
-		ranlib $(NAME)
+$(NAME): $(OFILES)
+		ar rcs $(NAME) $(OFILES)
 
 clean:
 		rm -f $(OFILES)
