@@ -6,7 +6,7 @@
 /*   By: jkelly- <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/16 17:24:45 by jkelly-           #+#    #+#             */
-/*   Updated: 2019/10/16 10:28:08 by jkelly-          ###   ########.fr       */
+/*   Updated: 2019/10/16 11:19:20 by jkelly-          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,8 +38,8 @@ int					ft_isspc(char x);
 int					ft_strnequ(char const *s1, char const *s2, size_t n);
 int					ft_countwords(char const *s, char c);
 int					ft_memcmp(const void *s1, const void *s2, size_t n);
-const char			*ft_strstr(const char *haystack, const char *needle);
-const char			*ft_strnstr(const char *hs, const char *n, size_t len);
+char				*ft_strstr(const char *haystack, const char *needle);
+char				*ft_strnstr(const char *hs, const char *n, size_t len);
 void				ft_strclr(char *s);
 void				ft_putstr(char const *s);
 void				ft_putnbr(int n);
